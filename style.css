@@ -6,9 +6,9 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe, #43e97b, #38f9d7);
-    background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
+    background: linear-gradient(270deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe, #43e97b, #38f9d7, #ff9a9e, #fecfef, #ffecd2, #fcb69f);
+    background-size: 600% 600%;
+    animation: gradientShift 12s ease infinite;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -17,19 +17,48 @@ body {
 
 @keyframes gradientShift {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
+        transform: rotate(0deg);
     }
-    25% {
-        background-position: 100% 50%;
+    10% {
+        background-position: 20% 20%;
+        transform: rotate(36deg);
+    }
+    20% {
+        background-position: 40% 40%;
+        transform: rotate(72deg);
+    }
+    30% {
+        background-position: 60% 60%;
+        transform: rotate(108deg);
+    }
+    40% {
+        background-position: 80% 80%;
+        transform: rotate(144deg);
     }
     50% {
         background-position: 100% 100%;
+        transform: rotate(180deg);
     }
-    75% {
-        background-position: 0% 100%;
+    60% {
+        background-position: 80% 20%;
+        transform: rotate(216deg);
+    }
+    70% {
+        background-position: 60% 40%;
+        transform: rotate(252deg);
+    }
+    80% {
+        background-position: 40% 60%;
+        transform: rotate(288deg);
+    }
+    90% {
+        background-position: 20% 80%;
+        transform: rotate(324deg);
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
+        transform: rotate(360deg);
     }
 }
 
