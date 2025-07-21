@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Renk Paleti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resim Renk Paleti Çıkarıcı</h1>
+        
+        <div class="upload-area">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="upload-label">
+                <div class="upload-icon">📷</div>
+                <p>Resim seçmek için tıklayın</p>
+            </label>
+        </div>
+
+        <div id="imagePreview" class="image-preview hidden">
+            <img id="previewImg" alt="Önizleme">
+        </div>
+
+        <div id="colorPalette" class="color-palette hidden">
+            <h2>Renk Paleti</h2>
+            <div id="colorsContainer" class="colors-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
