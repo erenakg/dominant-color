@@ -18,47 +18,36 @@ body {
 @keyframes gradientShift {
     0% {
         background-position: 0% 0%;
-        transform: rotate(0deg);
     }
     10% {
         background-position: 20% 20%;
-        transform: rotate(36deg);
     }
     20% {
         background-position: 40% 40%;
-        transform: rotate(72deg);
     }
     30% {
         background-position: 60% 60%;
-        transform: rotate(108deg);
     }
     40% {
         background-position: 80% 80%;
-        transform: rotate(144deg);
     }
     50% {
         background-position: 100% 100%;
-        transform: rotate(180deg);
     }
     60% {
         background-position: 80% 20%;
-        transform: rotate(216deg);
     }
     70% {
         background-position: 60% 40%;
-        transform: rotate(252deg);
     }
     80% {
         background-position: 40% 60%;
-        transform: rotate(288deg);
     }
     90% {
         background-position: 20% 80%;
-        transform: rotate(324deg);
     }
     100% {
         background-position: 0% 0%;
-        transform: rotate(360deg);
     }
 }
 
@@ -69,6 +58,8 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
