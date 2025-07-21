@@ -72,10 +72,10 @@ class ColorExtractor {
             }
         }
         
-        // En yaygın renkleri al
+        // En yaygın renkleri al - 8'den 20'ye çıkardık
         const sortedColors = Array.from(colorMap.entries())
             .sort((a, b) => b[1] - a[1])
-            .slice(0, 8);
+            .slice(0, 20);
         
         const totalPixels = sortedColors.reduce((sum, [, count]) => sum + count, 0);
         
@@ -89,7 +89,7 @@ class ColorExtractor {
         });
     }
 
-    groupColor(r, g, b, step = 30) {
+    groupColor(r, g, b, step = 20) {
         return {
             r: Math.round(r / step) * step,
             g: Math.round(g / step) * step,
