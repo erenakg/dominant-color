@@ -133,4 +133,12 @@ class ColorExtractor {
             element.classList.add('copied');
             setTimeout(() => element.classList.remove('copied'), 1000);
         } catch (err) {
-            console.error('Kopyalama
+            console.error('Kopyalama hatası:', err);
+        }
+    }
+}
+
+// Uygulamayı başlat
+document.addEventListener('DOMContentLoaded', () => {
+    new ColorExtractor();
+});
